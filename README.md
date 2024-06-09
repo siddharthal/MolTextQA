@@ -1,13 +1,13 @@
 # MolTextQA: A Curated Question-Answering Dataset and Benchmark
-This is the official repository for **MolTextQA: A Curated Question-Answering Dataset and Benchmark for Molecular Structure-Text Relationship Learning**, currently in submission at Neurips datasets and benchmarking track.
+This is the official repository for **MolTextQA: A Curated Question-Answering Dataset and Benchmark for Molecular Structure-Text Relationship Learning**, currently under review.
 
 ## Contents
-- [Accessing the dataset](#dataset-link)
+- [Accessing the dataset](#accessing-the-dataset)
 - [Loading the Dataset](#loading-the-dataset)
 - [Sample Data Point](#sample-data-point)
 - [Dataset Categories](#dataset-categories)
 - [Data Statistics](#data-statistics)
-- [Benchmarking][#benchmark]
+- [Benchmark](#benchmark)
 - [Citing the Dataset](#citing-the-dataset)
 
 ### Accessing the dataset
