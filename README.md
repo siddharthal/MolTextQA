@@ -82,6 +82,34 @@ The Molecule QA task requires selecting the correct option from a set, given a S
 | llama2-70b   | 20.35          | 16.56               | 21.93         | 18.22           | 19.93   | 15.51  |
 | Random       | 20.28          | 20.43               | 21.12         | 19.84           | 20.58   | 19.17  |
 
+### Finetuning Performance
+
+Accuracy of different models in the finetuning setting, in both Molecule QA and Molecule Retrieval tasks.
+
+| Model            | Entire dataset | Physical Properties | Chemical Info | Biological Info | Sources | Uses   |
+|------------------|----------------|---------------------|---------------|-----------------|---------|--------|
+| **Molecule QA**          |                |                     |               |                 |         |        |
+| MoleculeSTM      | 65.14          | 68.62               | 61.86         | 65.35           | 69.93   | 71.12  |
+| MoMu             | 65.08          | 70.76               | 60.69         | 66.65           | 70.56   | 71.66  |
+| Llama3-8b        | 60.41          | 64.35               | 58.67         | 64.10           | 60.73   | 55.08  |
+| Llama2-7b        | 41.84          | 42.06               | 43.97         | 41.64           | 38.21   | 37.43  |
+| Galactica-125m   | 43.97          | 43.39               | 43.13         | 43.58           | 46.29   | 37.43  |
+| Galactica-1.3b   | 60.98          | 62.62               | 58.60         | 62.41           | 64.85   | 48.66  |
+| Galactica-6.7b   | 69.01          | 70.36               | 65.73         | 72.99           | 72.52   | 65.24  |
+| Molt5-large      | 34.15          | 30.57               | 34.27         | 38.34           | 32.56   | 26.74  |
+| Molt5-large-s2c  | 34.69          | 47.26               | 31.16         | 37.89           | 36.49   | 31.55  |
+| Random           | 20.69          | 20.55               | 22.78         | 21.11           | 20.18   | 19.49  |
+| **Molecule Retrieval**  |                |                     |               |                 |         |        |
+| MoleculeSTM      | 65.27          | 59.95               | 72.39         | 54.57           | 60.17   | 62.03  |
+| MoMu             | 63.60          | 56.34               | 70.52         | 53.27           | 59.23   | 57.75  |
+| Llama3-8b        | 20.60          | 19.76               | 20.67         | 20.07           | 20.90   | 22.46  |
+| Llama2-7b        | 20.58          | 20.43               | 20.03         | 20.77           | 21.49   | 21.39  |
+| Galactica-125m   | 21.62          | 28.04               | 21.57         | 20.92           | 20.09   | 31.02  |
+| Galactica-1.3b   | 22.17          | 29.64               | 22.45         | 21.67           | 19.71   | 31.02  |
+| Galactica-6.7b   | 22.30          | 30.44               | 22.60         | 22.22           | 19.28   | 33.16  |
+| Molt5-large      | 23.54          | 39.79               | 23.89         | 23.36           | 18.18   | 41.18  |
+| Molt5-large-c2s  | 23.00          | 32.31               | 23.86         | 21.32           | 19.87   | 29.95  |
+| Random           | 20.28          | 20.43               | 21.12         | 19.84           | 20.58   | 19.
 
 
 ### Citing the Dataset
