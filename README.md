@@ -118,7 +118,7 @@ Please cite this dataset using the following BibTeX entry:
 ```bibtex
 @misc{siddhartha_laghuvarapu_2024,
 	author = {Siddhartha Laghuvarapu, Namkyeong Lee, Chufan Gao, Jimeng Sun},
-	title = {MolTextQA (Revision 7ec025f)},
+	title = {MolTextQA},
 	year = 2024,
 	url = {https://huggingface.co/datasets/sl160/MolTextQA},
 	doi = {10.57967/hf/2443},
