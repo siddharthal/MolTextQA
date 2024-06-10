@@ -116,7 +116,7 @@ Accuracy of different models in the finetuning setting, in both Molecule QA and 
 Please cite this dataset using the following BibTeX entry:
 
 ```bibtex
-@misc{siddhartha_laghuvarapu_2024,
+@misc{moltextqa,
 	author = {Siddhartha Laghuvarapu, Namkyeong Lee, Chufan Gao, Jimeng Sun},
 	title = {MolTextQA},
 	year = 2024,
