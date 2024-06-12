@@ -6,7 +6,6 @@
 - Make sure to create directories to save the data to.
 ```jsx
 mkdir outputs
-mkdir finetuned_models
 ```
 
 ## 1. Training Galactica
