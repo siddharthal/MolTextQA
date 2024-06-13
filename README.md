@@ -4,9 +4,10 @@ This is the official repository for **MolTextQA: A Curated Question-Answering Da
 ## Contents
 - [Accessing the dataset](#accessing-the-dataset)
 - [Loading the Dataset](#loading-the-dataset)
-- [Sample Data Point](#sample-data-point)
 - [Dataset Categories](#dataset-categories)
 - [Data Statistics](#data-statistics)
+- [Data Structure](#data-structure)
+- [Intended Uses](#intended-uses)
 - [Benchmark](#benchmark)
 - [Citing the Dataset](#citing-the-dataset)
 
@@ -22,18 +23,6 @@ from datasets import load_dataset
 dataset = load_dataset("sl160/MolTextQA")
 ```
 
-### Sample Data Point
-| Attribute     | Data                                                              |
-|---------------|-------------------------------------------------------------------|
-| SMILES sequence | CC(=O)C                                                           |
-| Question      | What is the physical state of the molecule at room temperature?   |
-| Options       | (a) Liquid (b) Solid (c) Gas                                      |
-| Correct Option | (a) Liquid                                                        |
-| Sentence      | The physical state of the molecule is liquid.                     |
-| SMILES options | (a) CH4 (b) CC(=O)C (c) C(=O)([O-])[O-].[Ca+2]                    |
-| Correct SMILE | (b) CC(=O)C                                                       |
-| PubChem ID    | 180                                                               |
-| Category      | Physical Properties                                               |
 
 ### Dataset Categories
 - **Chemical Information:** covers the chemical structure, functional groups, and chemical properties.
@@ -51,6 +40,28 @@ dataset = load_dataset("sl160/MolTextQA")
 | Test      | 5000      | 12092     | 749                 | 5947                 | 2003                   | 3206   | 187         |
 | **Total** | 240836    | 503018    | 45091               | 224468               | 52914                  | 165856 | 14670       |
 
+### Data structure
+
+Each data point in the dataset contains the following fields:
+
+- **CID**: The PubChem Identifier of the molecule.
+- **QID**: The identifier of the question within a CID.
+- **Category**: The category of the data point, following this convention:
+  1. Physical properties
+  2. Chemical information
+  3. Biological uses
+  4. Sources
+  5. General applications
+- **Sentence**: A sentence summary of the question and answer.
+- **Question**: The actual question asked.
+- **Options**: A set of options for the answer, of which one is correct.
+- **Correct_option**: The index (1-based) of the correct option.
+- **Retrieval_options**: A set of PubChem IDs used for molecule retrieval from the sentence task.
+- **Retrieval_correct**: The correct option in the retrieval task.
+
+### Intended Uses 
+
+The dataset is primarily intended to be used for molecule-text relationship learning. The task of molecule-text learning has been gaining increasing attention in recent research. However, the current datasets and developed models do not enable structured inference, and evaluation is not precise. The MolTextQA dataset addresses these challenges by offering a question-answering format with multiple-choice answers. Questions are based on a small molecule input, with answers provided in textual sentence or multiple-choice format. The dataset is intended for applications in fields such as drug discovery, retrosynthesis, and the discovery of materials like fertilizers, pesticides, and perfumes.
 
 ## Benchmark
 
