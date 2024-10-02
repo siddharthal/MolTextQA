@@ -3,7 +3,6 @@ This is the official repository for **MolTextQA: A Curated Question-Answering Da
 
 ## Contents
 - [Accessing the dataset](#accessing-the-dataset)
-- [Loading the Dataset](#loading-the-dataset)
 - [Dataset Categories](#dataset-categories)
 - [Data Statistics](#data-statistics)
 - [Data Structure](#data-structure)
@@ -12,16 +11,8 @@ This is the official repository for **MolTextQA: A Curated Question-Answering Da
 - [Citing the Dataset](#citing-the-dataset)
 
 ### Accessing the dataset
-[Access the dataset here](https://huggingface.co/datasets/sl160/MolTextQA)
 
-### Loading the Dataset
-To load the dataset using the Hugging Face `datasets` library, you can use the following code:
-
-```python
-from datasets import load_dataset
-
-dataset = load_dataset("sl160/MolTextQA")
-```
+The dataset can be accessed as csv files in `datasets\` folder. 
 
 
 ### Dataset Categories
@@ -124,14 +115,6 @@ Accuracy of different models in the finetuning setting, in both Molecule QA and 
 
 
 ### Citing the Dataset
-Please cite this dataset using the following BibTeX entry:
 
-```bibtex
-@misc{moltextqa,
-	author = {Siddhartha Laghuvarapu, Namkyeong Lee, Chufan Gao, Jimeng Sun},
-	title = {MolTextQA},
-	year = 2024,
-	url = {https://huggingface.co/datasets/sl160/MolTextQA},
-	doi = {10.57967/hf/2443},
-	publisher = {Hugging Face}
-}
+The dataset will be hosted with a permanent DOI upon acceptance. 
+
