@@ -6,6 +6,7 @@ This is the official repository for **MolTextQA: A Curated Question-Answering Da
 - [Dataset Categories](#dataset-categories)
 - [Data Statistics](#data-statistics)
 - [Data Structure](#data-structure)
+- [Sample Questions](#sample-questions)
 - [Intended Uses](#intended-uses)
 - [Benchmark](#benchmark)
 - [Citing the Dataset](#citing-the-dataset)
@@ -50,9 +51,38 @@ Each data point in the dataset contains the following fields:
 - **Retrieval_options**: A set of PubChem IDs used for molecule retrieval from the sentence task.
 - **Retrieval_correct**: The correct option in the retrieval task.
 
+### Sample questions
+
+1. **How is the molecule manufactured?**
+   - Options: By reacting benzene with hydrochloric acid; By reacting ethylene with sulfuric acid; By reacting acetylene with nitric acid; By reacting methane with sulfuric acid; By reacting toluene with concentrated sulfuric acid
+
+2. **What is the physical state of the molecule at room temperature?**
+   - Options: solid, liquid, gas
+
+3. **What is the source of the molecule?**
+   - Options: Arabidopsis thaliana; Ludwigia repens; Escherichia coli; Streptomyces coelicolor;
+
+4. **What type of immunity does the molecule affect?**
+   - Options: Humoral Immunity; Cell-mediated Immunity; Innate Immunity; Adaptive Immunity; Passive Immunity
+
+5. **What is the molecule's common use in the food industry?**
+   - Options: preservative; flavor enhancer; texture modifier; coloring agent
+
+6. **How has the EPA classified the molecule?**
+   - Options: Group A, human carcinogen; Group B, probable human carcinogen; Group C, possible human carcinogen; Group D, not classifiable as to human carcinogenicity; Group E, evidence of non-carcinogenicity
+
+7. **What is the flash point of the molecule?**
+   - Options: 100 °F; 150 °F; 175 °F; 200 °F; 250 °F
+
+
+
 ### Intended Uses 
 
 The dataset is primarily intended to be used for molecule-text relationship learning. The task of molecule-text learning has been gaining increasing attention in recent research. However, the current datasets and developed models do not enable structured inference, and evaluation is not precise. The MolTextQA dataset addresses these challenges by offering a question-answering format with multiple-choice answers. Questions are based on a small molecule input, with answers provided in textual sentence or multiple-choice format. The dataset is intended for applications in fields such as drug discovery, retrosynthesis, and the discovery of materials like fertilizers, pesticides, and perfumes.
+
+### Dataset efficacy evaluation
+
+A small fraction of the dataset is manually verified to assess the factual validity, answerability, and relevance of the questions. The samples used in this process, along with those that do not satisfy the criteria based on these metrics, are available in `benchmark/validation/human_eval.csv`
 
 ## Benchmark
 
