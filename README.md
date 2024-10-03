@@ -8,6 +8,7 @@ This is the official repository for **MolTextQA: A Curated Question-Answering Da
 - [Data Structure](#data-structure)
 - [Sample Questions](#sample-questions)
 - [Intended Uses](#intended-uses)
+- [Dataset Efficacy evaluation](#dataset-efficacy-evaluation)
 - [Benchmark](#benchmark)
 - [Citing the Dataset](#citing-the-dataset)
 
@@ -73,8 +74,6 @@ Each data point in the dataset contains the following fields:
 
 7. **What is the flash point of the molecule?**
    - Options: 100 °F; 150 °F; 175 °F; 200 °F; 250 °F
-
-
 
 ### Intended Uses 
 
