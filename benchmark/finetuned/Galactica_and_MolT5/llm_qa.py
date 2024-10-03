@@ -1,5 +1,5 @@
 import os
-# os.environ['HF_HOME'] = '/srv/local/data/chufan2/huggingface/' # Set the Huggingface cache directory
+# os.environ['HF_HOME'] = '' # Set the Huggingface cache directory
 os.environ["WANDB_DISABLED"] = "true"
 os.environ["TOKENIZERS_PARALLELISM"] = "false"  # To avoid warnings about parallelism in tokenizers
 import torch
