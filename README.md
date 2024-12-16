@@ -129,6 +129,8 @@ Accuracy of different models in the finetuning setting, in both Molecule QA and 
 | Galactica-6.7b   | 69.01          | 70.36               | 65.73         | 72.99           | 72.52   | 65.24  |
 | Molt5-large      | 34.15          | 30.57               | 34.27         | 38.34           | 32.56   | 26.74  |
 | Molt5-large-s2c  | 34.69          | 47.26               | 31.16         | 37.89           | 36.49   | 31.55  |
+| BioT5             |  75.10 |  81.04 |  73.70 |  73.79 |  77.51 |  68.45 |
+| BioT5-plus        |  71.16 |  69.35 |  68.08 |  72.59 |  78.42 |  72.73 |
 | Random           | 20.69          | 20.55               | 22.78         | 21.11           | 20.18   | 19.49  |
 | **Molecule Retrieval**  |                |                     |               |                 |         |        |
 | MoleculeSTM      | 65.27          | 59.95               | 72.39         | 54.57           | 60.17   | 62.03  |
@@ -140,6 +142,8 @@ Accuracy of different models in the finetuning setting, in both Molecule QA and 
 | Galactica-6.7b   | 22.30          | 30.44               | 22.60         | 22.22           | 19.28   | 33.16  |
 | Molt5-large      | 23.54          | 39.79               | 23.89         | 23.36           | 18.18   | 41.18  |
 | Molt5-large-c2s  | 23.00          | 32.31               | 23.86         | 21.32           | 19.87   | 29.95  |
+| BioT5      |  23.34 |  37.63 |  21.29  |  21.14 |  17.26 |  33.16 |
+| BioT5-plus |  22.30 |  31.24 |  21.286 |  19.46 |  17.75 |  27.72 |
 | Random           | 20.28          | 20.43               | 21.12         | 19.84           | 20.58   | 19.
 
 
